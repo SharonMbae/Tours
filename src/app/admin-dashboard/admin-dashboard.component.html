@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+
+  <div class="container mx-auto p-8 flex-grow">
+    <app-nav-bar></app-nav-bar>
+
+    <div class="container mx-auto p-8 bg-white rounded shadow-lg">
+
+        <h2 class="text-3xl font-semibold mb-4">Admin Dashboard</h2>
+
+       
+        <form class="mb-8">
+            <h3 class="text-xl font-bold mb-2">Add New Tour</h3>
+
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <label for="tourName" class="block text-gray-600 text-sm font-semibold mb-2">Tour Name</label>
+                    <input type="text" id="tourName" name="tourName" class="w-full px-3 py-2 border rounded-md">
+                </div>
+
+                <div class="flex">
+                  <div class="w-full">
+                      <label for="tourStartDate" class="block text-gray-600 text-sm font-semibold mb-2">Tour Start Date</label>
+                      <input type="date" id="tourStartDate" name="tourStartDate" class="w-full px-3 py-2 border rounded-md">
+                  </div>
+
+                  <div class="w-full">
+                      <label for="tourEndDate" class="block text-gray-600 text-sm font-semibold mb-2">Tour End Date</label>
+                      <input type="date" id="tourEndDate" name="tourEndDate" class="w-full px-3 py-2 border rounded-md">
+                  </div>
+              </div>
+
+                <div>
+                    <label for="tourPrice" class="block text-gray-600 text-sm font-semibold mb-2">Tour Price</label>
+                    <input type="text" id="tourPrice" name="tourPrice" class="w-full px-3 py-2 border rounded-md">
+                </div>
+
+                <div>
+                    <label for="tourImage" class="block text-gray-600 text-sm font-semibold mb-2">Tour Image URL</label>
+                    <input type="text" id="tourImage" name="tourImage" class="w-full px-3 py-2 border rounded-md">
+                </div>
+            </div>
+
+            <button type="submit" class="mt-4 mr-auto bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-700 focus:outline-none focus:shadow-outline-blue active:bg-blue-600">Add Tour</button>
+
+        </form>
+
+        <div>
+            <h3 class="text-xl font-semibold mb-4">Existing Tours</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                
+                <div class="bg-white p-4 rounded shadow-md">
+                    <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Tour Image" class="mb-4 rounded ">
+                    <h3 class="text-xl font-semibold mb-2">Tour Example</h3>
+                    <p class="text-gray-500 mb-2">Date: June 15, 2023</p>
+                    <p class="text-gray-500 mb-2">Price: $299</p>
+                    <div></div>
+                    <button class="mt-4 bg-white text-yellow-500 border border-yellow-500 px-4 py-2 rounded hover:bg-yellow-100 focus:outline-none focus:shadow-outline-yellow active:bg-yellow-200">Soft Delete</button>
+                    <button class="mt-4 bg-white text-yellow-500 ml-2 border border-white-500 px-4 py-2 rounded hover:bg-yellow-600 focus:outline-none focus:shadow-outline-yellow active:bg-yellow-700">Update</button>
+
+                </div>
+
+              
+            </div>
+        </div>
+      </div>
+       
+      </div>
+      <div class="container mx-auto p-8">
+        <app-footer></app-footer>
+      </div>
+      
+</body>
+</html>

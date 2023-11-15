@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Your Website</title>
+</head>
+
+<body class="bg-gray-100">
+
+    <nav class="bg-blue-100 p-4">
+        <div class="container mx-auto flex items-center justify-between">
+            <div>
+                <a href="#" class="text-black text-xl font-bold">XPlora Tours</a>
+            </div>
+            <div class="space-x-4">
+                <a href="#" class="text-black">Home</a>
+                <a (click)="scrollToPlacesToVisit()" class="text-black">Tours</a>
+                <a (click)="scrollToRecommendedPlaces()" class="text-black">Destinations</a>
+            </div>
+            <div class="flex gap-4">
+                <button class="border border-yellow-500 text-yellow-500 px-4 py-2 rounded hover:bg-yellow-500 hover:text-white focus:outline-none focus:shadow-outline-blue active:bg-blue-800">Contact us</button>
+                <button class="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600 focus:outline-none focus:shadow-outline-blue active:bg-blue-800" routerLink="/login">Login</button>
+            </div>
+            
+        </div>
+    </nav>
+
+</body>
+
+</html>
+
